@@ -1,0 +1,17 @@
+{
+  "leagues": ["premier_league", "la_liga"],
+  "historical_seasons": ["2021-22", "2022-23", "2023-24", "2024-25", "2025-26"],
+  "model": {
+    "decay": 0.0018,
+    "max_goals": 8,
+    "l2": 0.01
+  },
+  "backtest": {
+    "initial_train_matches": 760,
+    "refit_every": 100
+  },
+  "simulation": {
+    "runs": 10000,
+    "seed": 42
+  }
+}

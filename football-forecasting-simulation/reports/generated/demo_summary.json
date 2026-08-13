@@ -1,0 +1,16 @@
+{
+  "data_scope": "deterministic synthetic demo",
+  "models": [
+    "league_rate_baseline",
+    "independent_poisson",
+    "dixon_coles"
+  ],
+  "backtest_predictions": 170,
+  "best_model_by_log_loss": "dixon_coles",
+  "best_log_loss": 1.0490932669573394,
+  "best_brier_score": 0.6282512965917364,
+  "simulations": 2000,
+  "completed_matches": 238,
+  "remaining_fixtures": 32,
+  "model_converged": true
+}
