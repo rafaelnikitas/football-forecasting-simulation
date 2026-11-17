@@ -18,7 +18,7 @@ def _probability_matrix(frame: pd.DataFrame) -> np.ndarray:
     missing = set(PROBABILITY_COLUMNS).difference(frame.columns)
     if missing:
         raise ValueError(f"Missing prediction columns: {sorted(missing)}")
-    probabilities = frame[PROBABILITY_COLUMNS].to_numpy(dtype=float)
+    probabilities = frame[PROBABILITY_COLUMNS].to_numpy(dtype=float, copy=True)
     if not np.isfinite(probabilities).all():
         raise ValueError("Predictions must be finite")
     if (probabilities < 0).any():
